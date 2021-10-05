@@ -1,0 +1,15 @@
+[package]
+name = "wayout"
+version = "0.1.0"
+authors = ["Rafael Gumieri <rgumieri@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+structopt = "0.3"
+swayipc-async = "2.0.0-alpha.3"
+async-std = { version = "1", features = ["attributes"]}
+signal-hook-async-std = "0.2"
+signal-hook = "0.3"
+anyhow = "1"
