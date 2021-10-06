@@ -62,7 +62,7 @@ async fn main() -> Result<()> {
             },
             Event::Workspace(event) => match event.change {
                 WorkspaceChange::Init => {
-                    conection.run_command("gaps horizontal current set 760").await?;
+                    conection.run_command("gaps horizontal current set 752").await?;
                 }
                 _ => {}
             },
@@ -105,7 +105,7 @@ async fn autolayout(conn: &mut Connection) -> Result<()> {
         return Ok(());
     }
 
-    conn.run_command("gaps horizontal current set 760").await?;
+    conn.run_command("gaps horizontal current set 752").await?;
 
     conn.run_command(format!("mark --add main_{}", parent.id)).await?;
 
